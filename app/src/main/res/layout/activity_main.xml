@@ -22,11 +22,11 @@
         android:layout_marginTop="40dp"/>
 
     <Button
+        android:id="@+id/StopScanButton"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
-        android:text="Stop Scanning"
-        android:id="@+id/StopScanButton"
-        android:layout_marginTop="40dp"/>
+        android:layout_marginTop="40dp"
+        android:text="Stop Scanning" />
 
     <TextView
         android:layout_width="match_parent"
@@ -35,5 +35,26 @@
         android:id="@+id/PeripheralTextView"
         android:scrollbars="vertical"
         android:maxLines="30" />
+
+    <Button
+        android:id="@+id/startAdvertise"
+        android:layout_width="111dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="40dp"
+        android:text="Advertise" />
+
+    <Button
+        android:id="@+id/stopAdvertising"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="-120dp"
+        android:layout_toStartOf="@+id/startAdvertise"
+        android:layout_toEndOf="@+id/StopScanButton"
+        android:text="Stop Advertising" />
 
 </RelativeLayout>
